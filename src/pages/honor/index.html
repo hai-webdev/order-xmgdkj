@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 引入公共页头 -->
+  <%= require("html-loader!../common/header/index.html") %>
+    <section class="banner">
+      <img src="/public/img/about-banner.jpg" alt="">
+    </section>
+    <section class="honor">
+      <ul class="honor-tabs">
+        <li class="honor-tab">
+          <a href="/about.html">关于我们</a>
+        </li>
+        <li class="honor-tab active">
+          <a href="/honor.html">荣誉资质</a>
+        </li>
+      </ul>
+      <div class="honor-info1">
+        <div class="info-title">
+          <h1 class="cn">荣誉资质</h1>
+          <h2 class="en">Honor</h2>
+        </div>
+        <ul class="honor-list">
+          <li class="honor-item">
+            <a href="/public/img/iso9001.jpg" target="_blank">
+              <img src="/public/img/iso9001.jpg" alt="">
+              <p>ISO9001认证</p>
+            </a>
+          </li>
+          <li class="honor-item">
+            <a href="/public/img/qyxydjzs.jpg" target="_blank">
+              <img src="/public/img/qyxydjzs.jpg" alt="">
+              <p>企业信用等级证书</p>
+            </a>
+          </li>
+          <li class="honor-item">
+            <a href="/public/img/gxjsqy01.jpg" target="_blank">
+              <img src="/public/img/gxjsqy01.jpg" alt="">
+              <p>高新技术企业</p>
+            </a>
+          </li>
+          <li class="honor-item">
+            <a href="/public/img/kjcxxrqy.jpg" target="_blank">
+              <img src="/public/img/kjcxxrqy.jpg" alt="">
+              <p>科技创新新锐企业</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- 引入公共页尾 -->
+    <%= require("html-loader!../common/footer/index.html") %>
+</body>
+
+</html>

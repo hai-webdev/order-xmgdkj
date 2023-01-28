@@ -1,0 +1,62 @@
+@import "../../assets/global.less";
+
+.info-title {
+  border-left: 3px solid @mainColor;
+  padding-left: 10px;
+  color: #666;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  h1.cn {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  h2.en {
+    font-size: 14px;
+    font-weight: 400;
+    color: @mainColor;
+  }
+}
+section.jobs{
+    padding: 30px 0;
+    ul.jobs-list{
+        width: 90%;
+        margin: 0 auto;
+        li.job-item{
+            margin-bottom: 10px;
+            .title{
+                display: flex;
+                justify-content: space-between;
+                background-color: #eee;
+                padding: 10px;
+                font-weight: bold;
+                i.iconfont{
+                    color:@mainColor;
+                    transition: .6s;
+                    &.active{
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+            .more-info{
+                display: none;
+                padding: 20px;
+                background-color:#f5f5f5;
+                color: #666;
+                dl{
+                    margin-bottom: 30px;
+                    dt{
+                        font-size: 16px;
+                        font-weight: bold;
+                        margin-bottom: 15px;
+                    }
+                    dd{
+                        font-size: 14px;
+                        p{
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

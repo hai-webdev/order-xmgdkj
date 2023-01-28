@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 引入公共页头 -->
+    <%= require("html-loader!../common/header/index.html") %>
+    <section class="product-tmp">
+      <style>
+        .product-tmp{
+          text-align: center;
+        }
+      </style>
+      <img src="/public/img/pro_view01.png" alt="">
+      <img src="/public/img/pro_view02.png" alt="">
+      <img src="/public/img/pro_view03.png" alt="">
+      <img src="/public/img/pro_view04.png" alt="">
+      <img src="/public/img/pro_view05.png" alt="">
+      <img src="/public/img/pro_view06.png" alt="">
+      <img src="/public/img/pro_view07.png" alt="">
+      <img style="width: 70px;margin-top: 20px;" src="/public/img/pro_view08.png" alt="">
+      <div>
+        <a href="">资料下载</a>
+      </div>
+    </section>
+    <!-- 引入公共页尾 -->
+    <%= require("html-loader!../common/footer/index.html") %>
+  </body>
+</html>

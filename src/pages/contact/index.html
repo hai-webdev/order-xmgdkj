@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 引入公共页头 -->
+  <%= require("html-loader!../common/header/index.html") %>
+  <section class="banner">
+    <img src="/public/img/contact.png" alt="">
+  </section>
+    <section class="company">
+      <div class="info-title">
+        <h1 class="cn">联系我们</h1>
+        <h2 class="en">Contact us</h2>
+      </div>
+      <dl class="contact-info">
+        <dt class="company-title">上海星秒光电科技有限公司</dt>
+        <dd class="contact-item">
+          <div class="contact-item-name">地址：</div>
+          <div class="contact-item-cont">上海市嘉定区金运路华泰中心15号楼9层</div>
+        </dd>
+        <dd class="contact-item">
+          <div class="contact-item-name">网址：</div>
+          <div class="contact-item-cont">www.siminics.com</div>
+        </dd>
+        <dd class="contact-item">
+          <div class="contact-item-name">邮箱：</div>
+          <div class="contact-item-cont">
+            info@siminics.com<br>
+            sales@siminics.com
+          </div>
+        </dd>
+        <dd class="contact-item">
+          <div class="contact-item-name">电话：</div>
+          <div class="contact-item-cont">021-54391007</div>
+        </dd>
+      </dl>
+      
+    </section>
+    <section class="message">
+      <div class="info-title">
+        <h1 class="cn">留言反馈</h1>
+        <h2 class="en">Message</h2>
+      </div>
+      <form action="">
+        <input type="text" placeholder="姓名">
+        <input type="text" placeholder="单位">
+        <input type="text" placeholder="电话">
+        <input type="text" placeholder="邮箱">
+        <textarea name="" placeholder="留言信息"></textarea>
+        <button type="submit">提交</button>
+      </form>
+    </section>
+    <section class="map">
+      <div class="info-title">
+        <h1 class="cn">在线地图</h1>
+        <h2 class="en">Map</h2>
+      </div>
+      <div id="map">
+        <img src="/public/img/map.png" alt="">
+      </div>
+      <div class="map-info">
+        <div class="map-title">交通线路</div>
+        <div class="map-cont">
+          <p>地铁：13号线金运路地铁站2号口步行至华泰中心</p>
+          <p>公交：158路、173路、 121路、安虹线、南江线</p>
+        </div>
+      </div>
+    </section>
+    <!-- 引入公共页尾 -->
+    <%= require("html-loader!../common/footer/index.html") %>
+</body>
+
+</html>

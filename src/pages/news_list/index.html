@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 引入公共页头 -->
+  <%= require("html-loader!../common/header/index.html") %>
+    <section class="banner">
+      <img src="/public/img/news-banner.png" alt="">
+    </section>
+    <section class="news">
+      <ul class="news-tabs">
+        <li class="news-tab active">
+          <a href="/news_list.html">星秒新闻</a>
+        </li>
+        <li class="news-tab">
+          <a href="/news_list.html">行业动态</a>
+        </li>
+      </ul>
+      <ul class="news-list">
+        <li class="news-item">
+          <a href="/news_view.html">
+            <div class="left-img" style="background-image: url(/public/img/news01.jpg);"></div>
+            <div class="right-text">
+              <h1 class="title">星秒科技出席产业联盟年会，获得荣誉奖项</h1>
+              <div class="note">12月7日-8日，“2020年中国移动机器人（AGV/AMR）产业发展年会”正式</div>
+            </div>
+          </a>
+        </li>
+        <li class="news-item">
+          <a href="/news_view.html">
+            <div class="right-text">
+              <h1 class="title">星秒科技出席产业联盟年会，获得荣誉奖项</h1>
+              <div class="note">12月7日-8日，“2020年中国移动机器人（AGV/AMR）产业发展年会”正式</div>
+            </div>
+            <div class="left-img" style="background-image: url(/public/img/news02.jpg);"></div>
+          </a>
+        </li>
+        <li class="news-item">
+          <a href="/news_view.html">
+            <div class="left-img" style="background-image: url(/public/img/news02.jpg);"></div>
+            <div class="right-text">
+              <h1 class="title">星秒科技出席产业联盟年会，获得荣誉奖项</h1>
+              <div class="note">12月7日-8日，“2020年中国移动机器人（AGV/AMR）产业发展年会”正式</div>
+            </div>
+          </a>
+        </li>
+        <li class="news-item">
+          <a href="/news_view.html">
+            <div class="right-text">
+              <h1 class="title">星秒科技出席产业联盟年会，获得荣誉奖项</h1>
+              <div class="note">12月7日-8日，“2020年中国移动机器人（AGV/AMR）产业发展年会”正式</div>
+            </div>
+            <div class="left-img" style="background-image: url(/public/img/news01.jpg);"></div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- 引入公共页尾 -->
+    <%= require("html-loader!../common/footer/index.html") %>
+</body>
+
+</html>

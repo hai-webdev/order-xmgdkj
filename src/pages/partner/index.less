@@ -1,0 +1,125 @@
+@import "../../assets/global.less";
+
+h1.title-module{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+section.select{
+  margin-bottom: 30px;
+  ul.select-list{
+    width: 96%;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    li.select-item{
+      width: 46%;
+      margin: 2%;
+      margin-bottom: 10px;
+      text-align: center;
+      padding: 10px;
+      box-sizing: border-box;
+      box-shadow: 0 0 10px rgba(0,0 ,0 ,0.1);
+      .img{
+        padding-top: 50%;
+        width: 50%;
+        margin: 0 auto 10px;
+        .bgImg(contain);
+      }
+      .title{
+        font-weight: bold;
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 6px;
+      }
+      .note{
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: justify;
+      }
+    }
+  }
+}
+section.agent{
+  background-color: #e5f7f7;
+  color: #666;
+  padding-bottom: 30px;
+  ul.agent-list{
+    width: 94%;
+    margin:0 auto;
+    li.agent-item{
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      box-shadow: 0 0 10px rgba(0,0 ,0 ,0.1);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      background-color: #fff;
+      .img{
+        width: 120px;
+        padding-top: 120px;
+        .bgImg(contain)
+      }
+      .text{
+        width: calc(100% - 130px);
+        padding-left: 10px;
+        .title{
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        .note{
+          font-size: 13px;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+section.expect{
+  color: #666;
+  padding-bottom: 30px;
+  ul.expect-list{
+    width: 94%;
+    margin:0 auto;
+    li.expect-item{
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      box-shadow: 0 0 10px rgba(0,0 ,0 ,0.1);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      .img{
+        width: 120px;
+        padding-top: 120px;
+        .bgImg(contain)
+      }
+      .text{
+        width: calc(100% - 130px);
+        padding-left: 10px;
+        .title{
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        .note{
+          font-size: 13px;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+section.tel{
+  background-color: #144141;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 20px;
+}
